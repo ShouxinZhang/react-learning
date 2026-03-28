@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pytest_cache/
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+
+# Env
+.env
+.env.*

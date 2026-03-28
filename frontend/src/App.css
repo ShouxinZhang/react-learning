@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* 改为垂直排列 */
+  align-items: center;
+  gap: 24px;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 90%;
+  /* 防止在大屏幕上太宽 */
+}
+
+/* 输入区域依然保持水平 */
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  /* 手机端自动换行 */
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.input-group span {
+  padding-top: 10px;
+}
+
+.input-group textarea {
+  min-width: 200px;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: monospace;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: left;
+  outline: none;
+  transition: border-color 0.3s;
+  resize: vertical;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.input-group textarea:focus {
+  border-color: #61dafb;
+}
+
+/* 模式选择器样式 */
+.mode-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.mode-selector select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.mode-selector select:focus {
+  border-color: #61dafb;
+}
+
+.calc-btn {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  /* 禁止被压缩 */
+  border-radius: 50%;
+  border: none;
+  background: #61dafb;
+  color: #20232a;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(97, 218, 251, 0.3);
+  transition: all 0.3s;
+}
+
+.calc-btn:hover {
+  background: #4fa8c7;
+  transform: translateY(-2px);
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 600;
+  color: #20232a;
+  text-align: center;
+  word-break: break-all;
+  /* 关键：长数字强制换行 */
+  line-height: 1.4;
+  margin-top: 10px;
+  max-width: 100%;
+}
