@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border-top: 1px solid var(--border-color);
+  padding: 10px;
+  background: #fff;
+}
+
+.textarea {
+  flex: 1;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  resize: none;
+  padding: 8px 12px;
+  line-height: 20px;
+  outline: none;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+.textarea:focus {
+  border-color: var(--wechat-green);
+}
+
+.sendBtn {
+  background: var(--wechat-green);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  line-height: 20px;
+}
+
+.sendBtn:hover:not(:disabled) {
+  background: var(--wechat-green-dark);
+}
+
+.sendBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
